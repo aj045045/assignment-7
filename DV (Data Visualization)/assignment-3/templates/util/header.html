@@ -1,0 +1,20 @@
+<header class="bg-indigo-700 text-white fixed w-full">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="text-lg font-bold">
+            <a href="{{ url_for('index') }}" class="hover:text-gray-400">Assignment-3</a>
+        </div>
+        <nav>
+            <ul class="flex space-x-6">
+                <li>
+                    <a href="{{ url_for('index') }}" class="hover:text-indigo-400 hover:underline hover:underline-offset-4">Home</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('question1')}}" class="hover:text-indigo-400 hover:underline hover:underline-offset-4">Question-1</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('question2')}}" class="hover:text-indigo-400 hover:underline hover:underline-offset-4">Question-2</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

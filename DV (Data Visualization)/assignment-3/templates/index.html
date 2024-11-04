@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>{% block title required %}{% endblock %} - Assignment-3</title>
+</head>
+<body>
+        {% include 'util/header.html' %}
+        <div class="p-3 pt-20 min-h-screen">
+                {% block body required %} {% endblock %}
+        </div>
+        {% include 'util/footer.html' %}
+</body>
+</html>

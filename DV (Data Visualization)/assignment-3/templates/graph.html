@@ -1,0 +1,6 @@
+{% extends "index.html" %}
+{% block title %}Graphs {% endblock %}
+{% block body %}
+    <div class="text-3xl font-bold">{{ title }}</h1>
+    <img src="data:image/png;base64,{{ src }}">
+{% endblock %}

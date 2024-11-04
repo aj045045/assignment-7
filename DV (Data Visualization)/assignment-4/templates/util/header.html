@@ -1,0 +1,19 @@
+<header class="bg-rose-700 text-white fixed w-full">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="text-lg font-bold">
+            <a href="{{ url_for('index') }}" class="hover:text-gray-400">Assignment-4</a>
+        </div>
+        <nav>
+            <ul class="flex space-x-6">
+                <li>
+                    <a href="{{ url_for('index') }}" class="hover:text-rose-400 hover:underline hover:underline-offset-4">Home</a>
+                </li>
+                {% for i in range(1,8) %}
+                <li>
+                    <a href="/graph/{{ i }}" class="hover:text-rose-400 hover:underline hover:underline-offset-4">Question {{i}}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+</header>

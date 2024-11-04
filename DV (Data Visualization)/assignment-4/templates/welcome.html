@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+{% block title %}Welcome{% endblock %}
+{% block body %}
+<div>
+    <div class="text-3xl mt-5 mb-5">List of Charts</div>
+    <ul class="p-5 bg-rose-100 w-full text-rose-900 rounded-lg font-mono border-2 border-rose-300">
+        {% for item in itemsq1 %}
+        <li class="mb-4">{{ loop.index }}) {{ item }}</li>
+        {% endfor %}
+    </ul>
+</div>  
+{% endblock %}

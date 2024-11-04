@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+{% block title %}Q.1{% endblock %}
+{% block body %}
+{% import 'util/macros.html' as macros %}
+<div>
+    <div class="grid grid-cols-2 space-x-5">
+        {% for img in image %}
+        {{ macros.image(label[loop.index-1], img) }}
+        {% endfor%}
+    </div>
+
+</div>
+{% endblock %}

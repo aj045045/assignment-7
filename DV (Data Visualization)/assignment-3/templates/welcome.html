@@ -1,0 +1,24 @@
+{% extends "index.html" %}
+{% block title %}Welcome{% endblock %}
+{% block body %}
+<div class="grid grid-cols-2 space-x-10">
+    <div>
+        <div class="text-3xl mt-5 mb-5">Question - 1</div>
+        <div class="font-bold text-lg mb-2">List of Charts</div>
+        <ul class="p-5 bg-indigo-100 w-full text-indigo-900 rounded-lg font-mono border-2 border-indigo-300">
+            {% for item in itemsq1 %}
+            <li class="mb-4">{{ loop.index }}) {{ item }}.</li>
+            {% endfor %}
+        </ul>
+    </div>  
+    <div>
+        <div class="text-3xl mt-5 mb-5">Question - 2</div>
+        <div class="font-bold text-lg mb-2">List of Charts</div>
+        <ul class="p-5 bg-indigo-100 w-full text-indigo-900 rounded-lg font-mono border-2 border-indigo-300">
+            {% for item in itemsq2 %}
+            <li class="mb-4">{{ loop.index }}) {{ item }}.</li>
+            {% endfor %}
+        </ul>
+    </div>    
+</div>
+{% endblock %}

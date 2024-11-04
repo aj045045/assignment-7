@@ -1,0 +1,12 @@
+{% macro image(title, src) %}
+<div class="mb-10">
+    <div class="text-2xl font-bold">{{ title }}</div>
+    <form action="/graph" method="POST">
+        <input type="hidden" name="title" value="{{ title }}">
+        <input type="hidden" name="src" value="{{ src }}">
+        <button type="submit">
+            <img class="h-auto w-full max-w-4xl" src="data:image/png;base64,{{ src }}" alt="{{ title }}">
+        </button>
+    </form>
+</div>
+{% endmacro %}
