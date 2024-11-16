@@ -28,6 +28,7 @@ This is repo is used to submit assignment of semester 7
 
 - Operation of Numpy
 - Operation of Pandas
+- USA Housing Agency
 
 ## DV - Data visualization
 
